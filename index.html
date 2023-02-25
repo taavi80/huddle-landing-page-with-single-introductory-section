@@ -16,116 +16,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <style>
-      :root {
-        --Violet: hsl(257, 40%, 49%);
-        --Soft-Magenta: hsl(300, 69%, 71%);
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        min-height: 100vh;
-        background-color: var(--Violet);
-        background-image: url("/images/bg-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        color: white;
-        font-family: "Open Sans", sans-serif;
-        display: grid;
-        place-content: center;
-      }
-      .landing-page {
-        max-width: 375px;
-        padding: 2.3rem;
-      }
-      header {
-        margin-bottom: 4rem;
-      }
-      .header-logo {
-        max-width: 125px;
-        margin-bottom: 3.2rem;
-      }
-      .illustration-mockups {
-        width: 100%;
-      }
-      main {
-        text-align: center;
-      }
-      h1 {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.52rem;
-        margin-bottom: 1.3rem;
-      }
-      p {
-        max-width: 320px;
-        line-height: 1.6rem;
-
-        margin: 0 auto;
-        margin-bottom: 1.6rem;
-      }
-      .btn-register {
-        width: 70%;
-        color: var(--Violet);
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        letter-spacing: 0.03rem;
-        padding: 0.7rem;
-        border: none;
-        border-radius: 25px;
-        margin-bottom: 4rem;
-        box-shadow: 2px 3px 10px 1px hsla(257, 91%, 5%, 0.56);
-      }
-      .btn-register:hover,
-      .btn-register:focus {
-        background-color: var(--Soft-Magenta);
-        color: white;
-        cursor: pointer;
-      }
-      i {
-        height: 35px;
-        width: 35px;
-        position: relative;
-        border: 1px solid white;
-        border-radius: 50%;
-        margin: 0 0.2rem;
-      }
-      i:before {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block;
-      }
-      i:hover,
-      i:focus {
-        color: hsl(321, 90%, 60%);
-        border-color: hsl(321, 90%, 60%);
-        cursor: pointer;
-      }
-
-      @media (min-width: 850px) {
-        body {
-          background-size: cover;
-        }
-      }
-      @media (min-width: 1440px) {
-        body {
-          background-image: url("./images/bg-desktop.svg");
-          background-size: contain;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <div class="landing-page">
       <header>
-        <img class="header-logo" src="./images/logo.svg" alt="Huddle logo" />
+        <img class="header-logo" src="images/logo.svg" alt="Huddle logo" />
         <img
           class="illustration-mockups"
-          src="./images/illustration-mockups.svg"
+          src="images/illustration-mockups.svg"
           alt=""
         />
       </header>
@@ -136,8 +36,10 @@
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <button class="btn-register">Register</button>
-        <div>
+        <div class="btn">
+          <button class="btn-register">Register</button>
+        </div>
+        <div class="icons">
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
