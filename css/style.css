@@ -113,7 +113,7 @@ i:focus {
 
     .landing-page {
         max-width: 1440px;
-        padding: initial;
+        /* padding: initial; */
         display: grid;
         grid-template-columns: 1fr auto;
         padding-top: 4.5rem;
@@ -152,6 +152,9 @@ i:focus {
     }
 
     .icons {
+        position: absolute;
+        bottom: 100px;
+        right: 300px;
         display: flex;
         justify-content: right;
     }
